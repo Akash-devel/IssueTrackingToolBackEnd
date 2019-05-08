@@ -150,7 +150,7 @@ module.exports.setRouter = (app) => {
   app.post(`${baseUrl}/logout`, auth.isAuthorized, userController.logOut);
 
   /**
-	 * @api {post} /api/v1/users/logout api for user login
+	 * @api {post} /api/v1/users/logout api for user logout
 	 * @apiVersion 0.0.1
 	 * @apiGroup users
 	 *

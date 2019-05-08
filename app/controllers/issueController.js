@@ -135,7 +135,7 @@ let getAllIssues = (req, res) => {
         
                     } else if(check.isEmpty(result)) {
 
-                        logger.info('No Blog Found', 'IssueController: getAllIssues')
+                        logger.info('No Issue Found', 'IssueController: getAllIssues')
                         let apiResponse = response.generate(true, 'No Issue Found', 403, null);
                         res.send(apiResponse);
         
@@ -208,7 +208,7 @@ let updateIssue = (req, res) => {
 
             } else {
 
-                logger.info("Blog Updated Successfully", "IssueController: updateIssue()", 5);
+                logger.info("Issue Updated Successfully", "IssueController: updateIssue()", 5);
                 let apiResponse = response.generate(false, "Issue Edited Successfully", 200, result);
                 res.send(apiResponse);
             }
