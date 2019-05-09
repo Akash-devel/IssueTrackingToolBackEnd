@@ -437,7 +437,7 @@ let forgotPwd = (req, res) => {
         UserModel.updateOne({ email: userDetails.email }, { $set: { resetPasswordToken: token } }, function (err, res) {
         });
 
-        sgMail.setApiKey('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');
+        sgMail.setApiKey('');
         const mailOptions = {
             from: 'akashjagatdal@gmail.com', // sender address
             to: [userDetails.email], // list of receivers
