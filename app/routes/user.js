@@ -126,7 +126,7 @@ module.exports.setRouter = (app) => {
                 "headers": {
                     "Accept": "application/json",
                     "User-agent": "sendgrid/6.3.0;nodejs",
-                    "Authorization": "Bearer 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",
+                    "Authorization": "api-key",
                     "content-type": "application/json",
                     "content-length": 568
                 }
